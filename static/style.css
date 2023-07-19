@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Slab&display=swap');
+html{
+    color: wheat;
+    background-color: rgb(28, 26, 31);
+}
+
+html body{
+    background-color: rgb(27, 26, 30)!important;
+}
+
+html, div, p, body, h1, h2, h3, h4, h5, h6, *{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#questions{
+    padding-top: 40px;
+}
+
+#summary, #questions, #actual{
+    padding-right: 40px;
+}
+#questions b{
+    color: wheat;
+}
+
+th, tr, td{
+    border: 2px solid white;
+    text-align: center;
+}
+#sidebar{
+    background-color: rgb(24, 24, 31);
+    color: white;
+}
+
+#showList{
+    display: none;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+}
+
+.wrapper div.upload, .wrapper textarea{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+}
+.wrapper div{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+}
+
+.wrapper textarea{
+    border: 3px ridge rgb(25, 26, 32);
+    margin-bottom: 5px;
+}
+ul{
+    font-family: 'Roboto Slab', serif;
+}
+
+ul h1{
+    font-family: 'Kanit', sans-serif;
+}
+
+form i{
+    color: rgb(25, 25, 29);
+}
+
+.form input[type=submit]{
+    color: white;
+    background-color: rgb(25, 26, 31);
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+select,option{
+    color: black
+}
+.form input[type=submit]:hover{
+    background-color: rgba(3, 9, 37, 1);
+}
+
+.form h3{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.form input[type=file]{
+    max-width: 400px;
+}
+
+.summary{
+    border: 3px ridge whitesmoke;
+    padding: 20px;
+    border-radius: 30px 0px 30px 0px;
+    -webkit-border-radius: 30px 0px 30px 0px;
+    -moz-border-radius: 30px 0px 30px 0px;
+    -ms-border-radius: 30px 0px 30px 0px;
+    -o-border-radius: 30px 0px 30px 0px;
+}
+
+.graph{
+    align-items: center;
+    text-align: center;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.upload-container-textbox {
+    background-color: white;
+    flex-basis: 45%;
+    border-radius: 5px;
+    border: 5px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+
+}
+
+.upload-container-textbox-footer {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.upload-container-textbox-submit {
+    height: 100%;
+    background-color: black;
+    width: 200px;
+    color: white;
+}
+
+.upload-container-add {
+    background-color: white;
+    flex-basis:45%;
+    border-radius: 5px;
+    border: 5px solid #000;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.upload-container-form {
+    width: 100%;
+    height: 95%;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.upload-container-add-header {
+    color: black;
+}
+
+.upload-container-add-submit {
+    background-color: black;
+    width: 150px;
+    color: white;
+}

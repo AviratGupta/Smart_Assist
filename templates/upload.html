@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="text-2xl my-10 font-semibold text-center" style="color: black;">Get Insights From Your Video/Audio/Text</h1>
+<ul class=" list-disc cursor-pointer "  id="showListBtn"><h1 class="text-xl underline" style="color: black;">KNOW HOW TO USE?</h1>
+    <div id="showList">
+        <li>If you want to get insights from a text paragraph write the text in the text box.</li>
+        <li>If you want to get insights from an audio or video then uplGet Insights From Your Paragraph Or Video/Audio File.</li>
+        <li>Submit the form.</li>
+        <li>Wait while its processing.</li>
+        <li>And its all done! :)</li>
+    </div>
+</ul>
+
+<!-- <div id="text">Hello</div> -->
+
+<div class="upload-container">
+    <div class="upload-container-textbox">
+        <div class="upload-container-form">
+            <form action="/home" class="" method="POST" style="height: 100%;">
+               <textarea id="text" style="width: 100%; height: 90%; resize: none;"  class="form-control max-10 flex-grow text-black" name="inputText" id="textAreaExample1"></textarea>
+                <div class="upload-container-textbox-footer">
+                    <input type="hidden" name="type" value="text">
+                    <input class="upload-container-textbox-submit" type = "submit" value="Submit">
+                </div>
+           </form>
+        </div>
+    </div>
+    <div style="width: 0;" class="upload-container-add">
+        <form class="flex flex-row justify-around" action = "/home" method = "post" enctype="multipart/form-data">
+            <div class="icon"><i style="font-size: 90px;" class="fa-solid fa-file-video"></i></div>
+            <div class="form flex flex-col justify-between">
+                <h3 class="upload-container-add-header">Upload Video File</h3>
+                <input type="file" name="file" class="upload-container-add-header"/>
+                <input type="hidden" name="type" value="video">
+                <input class="upload-container-add-submit" type = "submit" value="Upload">
+            </div>
+        </form>
+        <p class="text-2xl text-center font-semibold upload-container-add-header">OR</p>
+        <form class="flex flex-row justify-around" action = "/home" method = "post" enctype="multipart/form-data">
+            <div class="icon"><i style="font-size: 90px;" class="fa-solid fa-file-audio"></i> </div>
+            <div class="form flex flex-col justify-between">
+                <h3 class="upload-container-add-header">Upload Audio File</h3>
+                <input type="file" name="file" class="upload-container-add-header" />
+                <input type="hidden" name="type" value="audio">
+                <input class="upload-container-add-submit" type = "submit" value="Upload">
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
